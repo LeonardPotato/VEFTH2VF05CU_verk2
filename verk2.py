@@ -4,7 +4,7 @@ from bottle import route, run, static_file,request,error
 @route("/")
 def index():
     return "<a href='/a'>Liður a</a>" \
-           "<a href='/b'>Liður b</a>"#Græni textinn fer inn sem html code, getur sett td h2 tag a hann . link er http://localhost:8080/
+           " <a href='/b'>Liður b</a>"#Græni textinn fer inn sem html code, getur sett td h2 tag a hann . link er http://localhost:8080/
 
 @route("/a") #verk 1a Menu
 def a():
@@ -32,7 +32,7 @@ def result():
     mynd = request.query.mynd
 
     return '<h2>Þú valdir ' + mynd + '</h2>' \
-                                     '<img src="/static/'+mynd+'.jpg'
+                                     '<img src="/static/'+mynd+'.jpg">'
 
 @error(404)
 def error404(error):
