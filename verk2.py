@@ -21,8 +21,8 @@ def bottle():
     return "<h1>Using bottlepy</h1>" \
            "<a href='/bottle/blabladaemi'>Click here</a>"# link er http://localhost:8080/bottle
 
-@route('/mynd')
-def mynd():
+@route('/b')
+def b():
     return '<a href="/result?mynd=cologne"><img src="/static/cologne.jpg" width="200">' \
            '<a href="/result?mynd=krakow"><img src="/static/krakow.jpg" width="200">' \
            '<a href="/result?mynd=berlin"><img src="/static/berlin.jpg" width="200">'
