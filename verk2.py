@@ -23,16 +23,16 @@ def bottle():
 
 @route('/b')
 def b():
-    return '<a href="/result?mynd=cologne"><img src="/static/cologne.jpg" width="200">' \
-           '<a href="/result?mynd=krakow"><img src="/static/krakow.jpg" width="200">' \
-           '<a href="/result?mynd=berlin"><img src="/static/berlin.jpg" width="200">'
+    return '<a href="/result?mynd=cologne"><img src="/static/cologne.jpg" width="30%">' \
+           '<a href="/result?mynd=krakow"><img src="/static/krakow.jpg" width="30%">' \
+           '<a href="/result?mynd=berlin"><img src="/static/berlin.jpg" width="30%">'
 
 @route('/result')
 def result():
     mynd = request.query.mynd
 
     return '<h2>Þú valdir ' + mynd + '</h2>' \
-                                     '<img src="/static/'+mynd+'.jpg">'
+                                     '<img src="/static/'+mynd+'.jpg" width="100%">'
 
 @error(404)
 def error404(error):
